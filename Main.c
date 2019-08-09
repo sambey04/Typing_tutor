@@ -2,7 +2,7 @@
 #include<stdlib.h>
 void scanfunc();
 
-
+//shashank and samarth
 void main()
 {
 	
