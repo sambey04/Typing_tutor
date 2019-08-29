@@ -1,40 +1,37 @@
-#include<stdio.h>
-#include<stdlib.h>
-void scanfunc();
-
-//shashank and samarth
-void main()
-{
-	
-char  str2[5];
-	char str1[5];
-int r,inner_n,outer_n;
-   time_t t;
-int array_word[5];
-   srand((unsigned) time(&t));
-
-   for(outer_n=0;outer_n>=0;outer_n++){
-       for(inner_n=0;inner_n<=5;inner_n++){ 
-
-
-	  // printf("        time is=%ld \n",time(&t));
-
-	
-		   r = rand();
-array_word[inner_n]=("%c \n",r % (122 + 1-97)+97);
-printf("%c ",array_word[inner_n]);
-	 }
-  scanfunc();
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include "TT2.h"
+#include "save_word.h"
+#include "random_char.h"
+#define MAX_WORD   100
+#define NUM_WORDS  10
    
-}}
-
-
-
-void scanfunc()
+int main(int argc, char const *argv[])
 {
+int n;
+printf("Enter 1 to print random data in file \n enter 2 for file handeling \n enter 3 for random char");
 
-     
-char str1[5];
-	scanf("%s", str1);
+scanf("%d",&n);
+switch(n)
+{
+    case 1:
+	    {
+     func1();
+break;
+	    }
+case 2:{
+    enter_data();
+       break;
+       }
+case 3:
+       {
+random_char();
+
+       break;
+       }	}
 
 }
+
+
