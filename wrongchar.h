@@ -6,18 +6,21 @@ int i,j;
     scanf ("%s", &str1);
     printf ("Give second string: ");
     scanf ("%s", &str2);
- 
    int size1= strlen(str1);
 int size2= strlen(str2);
- FILE *fptr = fopen("sample3.txt", "a");
-    for (j=0; j<size2; j++){
-           for (i=0; i<size1; i++){
-                  if (str1[i]==str2[j])
-                      memmove(&str1[i], &str1[i + 1], strlen(str1) - i);
-          }
+
+//printf("%c",str1[1]);
+
+
+FILE *fptr = fopen("sample3.txt", "a");
+    for (j=0; j<size1; j++)
+    {
+    if(str1[j]!=str2[j])
+    fprintf(fptr,"%c\n", str1[j]);
+   // printf("%s",str1[1]);
     }
-    fprintf (fptr,"%s\n", str1);
+    
  fclose(fptr); 
     return 0;
- 
+
 }
