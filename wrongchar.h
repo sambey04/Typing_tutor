@@ -1,3 +1,7 @@
+//wrongchar.h
+//fileHandeling 
+//saves wrong words in a file name samplie3.txt
+
 #include "TT2.h"
 
 int wrongchar()

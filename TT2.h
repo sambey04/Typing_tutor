@@ -1,3 +1,5 @@
+//Return Random words form a dictionary named filett.txt
+
 const char * func1(void)
 {
     /* Open words file */
