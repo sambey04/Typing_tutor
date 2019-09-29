@@ -1,4 +1,4 @@
-int func1(void)
+const char * func1(void)
 {
     /* Open words file */
     FILE* fp = NULL;
@@ -13,8 +13,6 @@ int func1(void)
     rewind(fp);
     for(i = 0 ; i < ran ; i++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
-    printf ("Give first string: ");
-    scanf ("%s", &user);
-    return 0;
+       // printf("%s" , words);
+    return words;
 }
