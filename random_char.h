@@ -1,6 +1,7 @@
 //this library prints random chars and scans them only 
 //in development stage 
 //dont fuck with this 
+void scanfunc();
 void random_char()
 
 {
