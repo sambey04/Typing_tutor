@@ -8,5 +8,5 @@ void enter_data()
  scanf("%[^\n]%*c", str);  
  fprintf(fptr,"%s",str);
  fclose(fptr);
- return 0;
+ //return 0;
  }

@@ -1,8 +1,12 @@
-int func1(void)
+//TT2
+//Return Random words form a dictionary named filett.txt
+/*
+char func1(void)
 {
-    /* Open words file */
+    // Open words file
     FILE* fp = NULL;
     char words[20];
+    char user[80];
     int i = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("filett.txt" , "r+");
@@ -12,6 +16,6 @@ int func1(void)
     rewind(fp);
     for(i = 0 ; i < ran ; i++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
-    return 0;
-}
+       // printf("%s" , words);
+    return words;
+}*/
