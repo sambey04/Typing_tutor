@@ -6,15 +6,15 @@ const char * func1(void)
     FILE* fp = NULL;
     char words[20];
     char user[80];
-    int i = 0 , ran = 0;
-    srand(time(NULL));
-    fp = fopen("filett.txt" , "r+");
-    for(; fgets(words , sizeof(words) , fp) ; i++)
+    int i = 0 , ran = 0;//variable declaration
+    srand(time(NULL));//Pseudo random number generator
+    fp = fopen("filett.txt" , "r+");//File open in read mode
+    for(; fgets(words , sizeof(words) , fp) ; i++)//Randomly choosing a word from text file.
           ;
         ran = rand() % i;
-    rewind(fp);
+    rewind(fp);//position indicator back to beginning
     for(i = 0 ; i < ran ; i++)
-        fgets(words , sizeof(words) , fp);
+        fgets(words , sizeof(words) , fp);//Display words
        // printf("%s" , words);
     return words;
 }
