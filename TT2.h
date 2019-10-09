@@ -1,8 +1,9 @@
+//TT2
 //Return Random words form a dictionary named filett.txt
-
-const char * func1(void)
+/*
+char func1(void)
 {
-    /* Open words file */
+    // Open words file
     FILE* fp = NULL;
     char words[20];
     char user[80];
@@ -17,4 +18,4 @@ const char * func1(void)
         fgets(words , sizeof(words) , fp);//Display words
        // printf("%s" , words);
     return words;
-}
+}*/
