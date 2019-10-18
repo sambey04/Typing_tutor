@@ -1,1 +1,8 @@
-ddd
+#include<stdio.h>
+
+int main()
+{
+
+
+
+}
