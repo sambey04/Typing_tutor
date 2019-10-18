@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "TT2.h"
 #include "save_word.h"
 #include "random_char.h"
 #include "wrongchar.h"
