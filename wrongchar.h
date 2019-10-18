@@ -2,7 +2,6 @@
 //fileHandeling 
 //saves wrong words in a file name samplie3.txt
 
-//#include "TT2.h"
 
 int wrongchar()
 {
@@ -16,7 +15,7 @@ int i,j,k;
     char user[80];
     int in = 0 , ran = 0;
     srand(time(NULL));
-    fp = fopen("filett.txt" , "r+");
+    fp = fopen("Dictionary.txt" , "r+");
     for(; fgets(words , sizeof(words) , fp) ; in++)
           ;
         ran = rand() % in;
@@ -38,7 +37,7 @@ int size2= strlen(str2);
 //printf("%c",str1[1]);
 
 
-FILE *fptr = fopen("sample3.txt", "a");
+FILE *fptr = fopen("User_error.txt", "a");
     for (j=0; j<size1; j++)
     {
     if(words[j]!=str2[j])
