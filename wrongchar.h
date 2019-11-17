@@ -1,7 +1,7 @@
 //wrongchar.h
 //fileHandeling 
 //saves wrong words in a file name samplie3.txt
-
+#include "newchar.h"
 
 int wrongchar()
 {
@@ -37,7 +37,7 @@ int size2= strlen(str2);
 //printf("%c",str1[1]);
 
 
-FILE *fptr = fopen("User_error.txt", "a");
+FILE *fptr = fopen("User_error.txt", "w");
     for (j=0; j<size1; j++)
     {
     if(words[j]!=str2[j])
@@ -45,7 +45,8 @@ FILE *fptr = fopen("User_error.txt", "a");
    // printf("%s",str1[1]);
     }
     
- fclose(fptr); 
+ fclose(fptr);
+saver();
     return 0;
 
 }
