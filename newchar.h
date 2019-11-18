@@ -15,8 +15,9 @@ int saver()
         exit(EXIT_FAILURE);
     while ((read = getline(&test, &len, fp)) != -1) {
 remove_spaces(test);
+        printf("Retrieved line of length %zu:\n", read);
 printf("%s",test);
-if(test=='a')
+if(*test=='a')
 {
 a++;
 }	
