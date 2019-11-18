@@ -14,7 +14,7 @@ int saver()
     if (fp == NULL)
         exit(EXIT_FAILURE);
     while ((read = getline(&test, &len, fp)) != -1) {
-remove_spaces(test);
+//remove_spaces(test);
         printf("Retrieved line of length %zu:\n", read);
 printf("%s",test);
 if(*test=='a')
@@ -22,105 +22,105 @@ if(*test=='a')
 a++;
 }	
 
-else if(test=='b')
+else if(*test=='b')
 {
 b++;
 }	
-else if(test=='c')
+else if(*test=='c')
 {
 c++;
 }	
-else if(test=='d')
+else if(*test=='d')
 {
 d++;
 }	
-else if(test=='e')
+else if(*test=='e')
 {
 e++;
 }	
-else if(test=='f')
+else if(*test=='f')
 {
 f++;
 }	
-else if(test=='g')
+else if(*test=='g')
 {
 g++;
 }	
-else if(test=='h')
+else if(*test=='h')
 {
 h++;
 }	
-else if(test=='i')
+else if(*test=='i')
 {
 i++;
 }	
-else if(test=='j')
+else if(*test=='j')
 {
 j++;
 }	
-else if(test=='k')
+else if(*test=='k')
 {
 k++;
 }	
-else if(test=='l')
+else if(*test=='l')
 {
 l++;
 }	
-else if(test=='m')
+else if(*test=='m')
 {
 m++;
 }	
 
-else if(test=='n')
+else if(*test=='n')
 {
 n++;
 }	
 
-else if(test=='o')
+else if(*test=='o')
 {
 o++;
 }	
-else if(test=='p')
+else if(*test=='p')
 {
 p++;
 }	
-else if(test=='q')
+else if(*test=='q')
 {
 q++;
 }	
-else if(test=='r')
+else if(*test=='r')
 {
 r++;
 }	
-else if(test=='s')
+else if(*test=='s')
 {
 s++;
 }	
-else if(test=='t')
+else if(*test=='t')
 {
 t++;
 }	
-else if(test=='u')
+else if(*test=='u')
 {
 u++;
 }	
-else if(test=='v')
+else if(*test=='v')
 {
 v++;
 }	
-else if(test=='w')
+else if(*test=='w')
 {
 w++;
 }	
-else if(test=='x')
+else if(*test=='x')
 {
 x++;
 }	
-else if(test=='y')
+else if(*test=='y')
 {
 y++;
 }	
-else if(test=='z')
+else if(*test=='z')
 {
 z++;
 }	
