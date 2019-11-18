@@ -5,7 +5,8 @@
 #include "save_word.h"
 #include "random_char.h"
 #include "wrongchar.h"
-
+#include "newchar.h"
+#include "ramji.h"
 #define MAX_WORD   100
 #define NUM_WORDS  10
    
@@ -21,7 +22,9 @@ switch(n)
     case 1:
 	    {
      wrongchar();
-break;
+saver();
+ // ram();
+     break;
 	    }
 case 3:
        {

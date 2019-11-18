@@ -1,126 +1,174 @@
-
 //function to read file User_error and save its contents according to number in different file 
 //
 char test;
-int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0,t=0,u=0,v=0,w=0,x=0,y=0,z=0;
+int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0,t=0,u=0,v=0,w=0,x=0,y=0,z=0,j1=0;
 int saver()
 {
-FILE * fptr = fopen("User_error.txt","a");
 
-for(j=0;j<10;j++)
-{
-fscanf(fptr,"%s",&test);
+ FILE * fp;
+    char * test = NULL;
+    size_t len = 0;
+    ssize_t read;
 
-
+    fp = fopen("User_error.txt", "r");
+    if (fp == NULL)
+        exit(EXIT_FAILURE);
+    while ((read = getline(&test, &len, fp)) != -1) {
+remove_spaces(test);
+printf("%s",test);
 if(test=='a')
 {
 a++;
 }	
 
-if(test=='b')
+else if(test=='b')
 {
 b++;
 }	
-if(test=='c')
+else if(test=='c')
 {
 c++;
 }	
-if(test=='d')
+else if(test=='d')
 {
 d++;
 }	
-if(test=='e')
+else if(test=='e')
 {
 e++;
 }	
-if(test=='f')
+else if(test=='f')
 {
 f++;
 }	
-if(test=='g')
+else if(test=='g')
 {
 g++;
 }	
-if(test=='h')
+else if(test=='h')
 {
 h++;
 }	
-if(test=='i')
+else if(test=='i')
 {
 i++;
 }	
-if(test=='j')
+else if(test=='j')
 {
 j++;
 }	
-if(test=='k')
+else if(test=='k')
 {
 k++;
 }	
-if(test=='l')
+else if(test=='l')
 {
 l++;
 }	
-if(test=='m')
+else if(test=='m')
 {
 m++;
 }	
 
-if(test=='n')
+else if(test=='n')
 {
 n++;
 }	
 
-if(test=='o')
+else if(test=='o')
 {
 o++;
 }	
-if(test=='p')
+else if(test=='p')
 {
 p++;
 }	
-if(test=='q')
+else if(test=='q')
 {
 q++;
 }	
-if(test=='r')
+else if(test=='r')
 {
 r++;
 }	
-if(test=='s')
+else if(test=='s')
 {
 s++;
 }	
-if(test=='t')
+else if(test=='t')
 {
 t++;
 }	
-if(test=='u')
+else if(test=='u')
 {
 u++;
 }	
-if(test=='v')
+else if(test=='v')
 {
 v++;
 }	
-if(test=='w')
+else if(test=='w')
 {
 w++;
 }	
-if(test=='x')
+else if(test=='x')
 {
 x++;
 }	
-if(test=='y')
+else if(test=='y')
 {
 y++;
 }	
-if(test=='z')
+else if(test=='z')
 {
 z++;
 }	
 }
-FILE *filePointer  = fopen(“user_score.txt”,“w”);
-fprintf(filePointer, "%s",a);
-fclose(filePointer);
+ fclose(fp);
+  //  if (test)
+    //    free(test);
+   // exit(EXIT_SUCCESS);
+
+printf("a==%d \n",a);
+printf("b==%d \n",b);
+printf("c==%d \n",c);
+printf("d==%d \n",d);
+printf("e==%d \n",e);
+printf("f==%d \n",f);
+printf("g==%d \n",g);
+printf("h==%d \n",h);
+printf("i==%d \n",i);
+printf("j==%d \n",j);
+printf("k==%d \n",k);
+printf("l==%d \n",l);
+printf("m==%d \n",m);
+printf("n==%d \n",n);
+printf("0==%d \n",o);
+printf("p==%d \n",p);
+printf("q==%d \n",q);
+printf("r==%d \n",r);
+printf("s==%d \n",s);
+printf("t==%d \n",t);
+printf("u==%d \n",u);
+printf("v==%d \n",v);
+printf("w==%d \n",w);
+printf("x==%d \n",x);
+printf("y==%d \n",y);
+printf("z==%d \n",z);
+ //FILE * fp;
+printf("test==%s \n",test);
+
+   //fp = fopen ("file.txt", "w+");
+   //fprintf(filePointer, "%s",a);
+
+//fclose(filePointer);
+}
+
+void remove_spaces(char* s) {
+    const char* d = s;
+    do {
+        while (*d == ' ') {
+            ++d;
+        }
+    } while (*s++ = *d++);
 }
