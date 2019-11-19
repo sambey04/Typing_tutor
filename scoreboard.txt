@@ -1,1 +1,26 @@
-a	2b	0c	0d	0e	0f	0g	0h	0i	2j	0k	0l	1m	0n	0o	0p	0q	1r	1s	0t	0u	1v	0w	0x	0y	0z	0
+a3
+b1
+c1
+d0
+e6
+f0
+g1
+h1
+i2
+j1
+k0
+l1
+m1
+n1
+o3
+p0
+q0
+r3
+s2
+t1
+u1
+v1
+w1
+x0
+y0
+z0

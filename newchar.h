@@ -16,6 +16,7 @@ int saver()
 {
 struct data target[26];
  FILE * fp;
+ FILE * fp1;
     char * test = NULL;
     size_t len = 0;
     ssize_t read;
@@ -52,9 +53,25 @@ target[23].character='x';
 target[24].character='y';
 target[25].character='z';
  //to inislise value of target.character == 0 
-for(no=0;no<26;no++)
-target[no].present=0;
 
+    fp1 = fopen("scoreboard.txt", "r");
+
+if(fp1!=NULL ){
+printf("%d",no);
+
+for(no=0;no<26;no++)
+fscanf(fp1,"%c%d\n",&target[no].character,&target[no].present);
+}
+
+else
+for(no=0;no<26;no++)
+{
+target[no].present=0;
+printf("%d tar",&d);
+}
+
+
+fclose(fp1);
   printf("%c",target[0].character); 
 
 while ((read = getline(&test, &len, fp)) != -1) {
@@ -75,11 +92,11 @@ if(*test==target[no].character)
 
 
 
- fp = fopen ("scoreboard.txt", "w+");
+ fp1 = fopen ("scoreboard.txt", "w+");
  
 for(no=0;no<26;no++)
-fprintf(fp,"%c\t%d",target[no].character,target[no].present);
-
+fprintf(fp1,"%c%d\n",target[no].character,target[no].present);
+fclose(fp1);
 }
 
 
