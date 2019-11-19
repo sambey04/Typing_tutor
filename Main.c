@@ -7,12 +7,14 @@
 #include "wrongchar.h"
 #include "newchar.h"
 #include "ramji.h"
+#include "Practice.h"
 #define MAX_WORD   100
 #define NUM_WORDS  10
    
 int main(int argc, char const *argv[])
 {
 int n;
+//char alphabet='a';
 printf("Enter 1 to print random data in file and scan and save \n  enter 3 for random char");
 
 scanf("%d",&n);
@@ -22,7 +24,10 @@ switch(n)
     case 1:
 	    {
      wrongchar();
-saver();
+saver();//infile newchar.h
+
+//Practice('a');
+
  // ram();
      break;
 	    }

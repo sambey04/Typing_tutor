@@ -1,12 +1,12 @@
 //wrongchar.h
 //fileHandeling 
 //saves wrong words in a file name samplie3.txt
-
+#include "Practice.h"
 int wrongchar()
 {
 char str1[80];
  char  	str2[80];
-int i,j,k;
+int i,j,k,n=0;
 
     /* Open words file */
     FILE* fp = NULL;
@@ -21,8 +21,11 @@ int i,j,k;
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
- 
+                //if(n>0)
+	       //words[20]=Practice();
+	       printf("%s" , words);
+// printf("%s",Practice());
+
 //printf ("Give first string: ");
     //scanf ("%s", &str1);
     //for(k=0;str1[j]!="/0";k++)
