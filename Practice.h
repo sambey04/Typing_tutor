@@ -1,11 +1,13 @@
-int Practice(alphabet)
-{
-
+const char * Practice(alphabet)
+{   
+    char user[80];
+   char words[20];
+    
 if(alphabet=='a')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//a.txt" , "r+");
@@ -15,12 +17,15 @@ if(alphabet=='a')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+        
+    }
 else if(alphabet=='b')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//b.txt" , "r+");
@@ -30,13 +35,15 @@ else if(alphabet=='b')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 
 else if(alphabet=='c')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//c.txt" , "r+");
@@ -46,12 +53,14 @@ else if(alphabet=='c')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='d')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//d.txt" , "r+");
@@ -61,12 +70,14 @@ else if(alphabet=='d')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='e')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//e.txt" , "r+");
@@ -76,12 +87,14 @@ else if(alphabet=='e')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='f')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//f.txt" , "r+");
@@ -91,12 +104,14 @@ else if(alphabet=='f')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='g')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//g.txt" , "r+");
@@ -106,12 +121,14 @@ else if(alphabet=='g')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='h')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//h.txt" , "r+");
@@ -121,12 +138,14 @@ else if(alphabet=='h')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='i')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//i.txt" , "r+");
@@ -136,12 +155,14 @@ else if(alphabet=='i')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='j')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//j.txt" , "r+");
@@ -151,12 +172,14 @@ else if(alphabet=='j')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='k')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//k.txt" , "r+");
@@ -166,12 +189,14 @@ else if(alphabet=='k')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='l')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//l.txt" , "r+");
@@ -181,12 +206,14 @@ else if(alphabet=='l')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='m')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//m.txt" , "r+");
@@ -196,12 +223,14 @@ else if(alphabet=='m')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='n')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//n.txt" , "r+");
@@ -211,12 +240,14 @@ else if(alphabet=='n')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='o')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//o.txt" , "r+");
@@ -226,12 +257,14 @@ else if(alphabet=='o')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='p')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//p.txt" , "r+");
@@ -241,12 +274,14 @@ else if(alphabet=='p')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='q')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//q.txt" , "r+");
@@ -256,12 +291,14 @@ else if(alphabet=='q')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='r')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//r.txt" , "r+");
@@ -271,12 +308,14 @@ else if(alphabet=='r')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='s')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//s.txt" , "r+");
@@ -286,12 +325,14 @@ else if(alphabet=='s')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='t')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//t.txt" , "r+");
@@ -301,12 +342,14 @@ else if(alphabet=='t')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='u')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//u.txt" , "r+");
@@ -316,12 +359,14 @@ else if(alphabet=='u')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='v')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//v.txt" , "r+");
@@ -331,12 +376,14 @@ else if(alphabet=='v')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='w')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//w.txt" , "r+");
@@ -346,12 +393,14 @@ else if(alphabet=='w')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='x')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//x.txt" , "r+");
@@ -361,12 +410,14 @@ else if(alphabet=='x')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='y')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//y.txt" , "r+");
@@ -376,12 +427,14 @@ else if(alphabet=='y')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
+        printf("%s" , words);
+        fclose(fp);
+    }
 else if(alphabet=='z')
   {  /* Open words file */
     FILE* fp = NULL;
-    char words[20];
-    char user[80];
+    
+    
     int in = 0 , ran = 0;
     srand(time(NULL));
     fp = fopen("AlphabetDictionary//z.txt" , "r+");
@@ -391,6 +444,10 @@ else if(alphabet=='z')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);}
-
+        printf("%s" , words);
+        fclose(fp);
+        
+    }
+    const char * x=words;
+return x;
 }
