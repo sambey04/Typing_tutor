@@ -47,6 +47,7 @@ fscanf(fp2,"%d\n%d",&enter.total_letter,&enter.total_wrongl);
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
+    enter.total_wrongl=0;
 
                 if(n>0)
 		{
