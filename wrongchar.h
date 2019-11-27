@@ -70,7 +70,7 @@ alphabet=target[no].character;
 
 	       printf("%s" , words);
 	       enter.total_letter=enter.total_letter+strlen(words);
-printf("%d",enter.total_letter);
+//printf("%d",enter.total_letter);
 	       // printf("%s",Practice());
 
 //printf ("Give first string: ");

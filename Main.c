@@ -25,7 +25,8 @@ float number=0,WPM;
 	  printf("\033[1;31m");
 int n;
 //char alphabet='a';
-printf("Enter \n 1) Easy  \n 2) Difficult \n 3) Show Scoreboard \n 4) Efficiency ");
+while(1){
+printf("Enter \n 1) Easy  \n 2) Difficult \n 3) Show Scoreboard \n 4) Efficiency \n ");
 
 
 	  printf("\033[0;32m");
@@ -74,5 +75,5 @@ break;
 
 }
 }
-
+}
 
