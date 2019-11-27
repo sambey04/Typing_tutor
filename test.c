@@ -2,11 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "Practice.h"
 
-#define MAX_WORD   100
-#define NUM_WORDS  10
- 
+
+
 
 int main(int argc, char const *argv[])
 {

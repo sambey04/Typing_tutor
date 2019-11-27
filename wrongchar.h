@@ -10,13 +10,29 @@ int present;
 
 };
 
+struct score
+{
+int total_letter;
+int total_wrongl;
+};
+
 int wrongchar()
 {
 
 struct data1 target[26];
+struct score enter;
 char str1[80];
  char  	str2[80],alphabet;
 int i,j,k,n=1,MAX=0,no,jame;
+
+
+enter.total_letter=0;
+enter.total_wrongl=0;
+FILE *fp2=NULL;
+
+    fp2 = fopen("letter.txt", "r");
+fscanf(fp2,"%d\n%d",&enter.total_letter,&enter.total_wrongl);
+ fclose(fp2);
 
     /* Open words file */
     FILE* fp = NULL;
@@ -42,7 +58,10 @@ fscanf(fp1,"%c%d\n",&target[no].character,&target[no].present);
 if(MAX<target[no].present){
 	MAX=target[no].present;
 alphabet=target[no].character;
-}}
+}
+
+	enter.total_wrongl=enter.total_wrongl+target[no].present;
+}
 		strcpy(words,Practice(alphabet));
 		n++;
 	//	printf("this is the alphabet=%c\n",alphabet);
@@ -50,7 +69,9 @@ alphabet=target[no].character;
 		}
 
 	       printf("%s" , words);
-// printf("%s",Practice());
+	       enter.total_letter=enter.total_letter+strlen(words);
+printf("%d",enter.total_letter);
+	       // printf("%s",Practice());
 
 //printf ("Give first string: ");
     //scanf ("%s", &str1);
@@ -80,6 +101,13 @@ FILE *fptr = fopen("User_error.txt", "w");
     }
     
  fclose(fptr);
-    return 0;
+ 
+
+ fp2 = fopen("letter.txt", "w+");
+fprintf(fp2,"%d\n%d",enter.total_letter,enter.total_wrongl);
+ fclose(fp2);
+
+
+ return 0;
 
 }

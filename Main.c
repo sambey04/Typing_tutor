@@ -2,26 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+
 #include "save_word.h"
 #include "random_char.h"
 #include "wrongchar.h"
 #include "newchar.h"
 #include "ramji.h"
 //#include "Practice.h"
+
 #define MAX_WORD   100
 #define NUM_WORDS  10
-   
+
 int main(int argc, char const *argv[])
 {
-int msec = 0, trigger = 10; /* 10ms */
+
+int msec = 0, trigger = 100; /* 100ms*/  
 clock_t before = clock();
+float number=0,WPM;
 
 
 
 	  printf("\033[1;31m");
 int n;
 //char alphabet='a';
-printf("Enter 1 to print random data in file and scan and save \n enter 3 for random char");
+printf("Enter \n 1) Easy  \n 2) Difficult \n 3) Show Scoreboard \n 4) Efficiency ");
 
 
 	  printf("\033[0;32m");
@@ -31,34 +35,43 @@ printf("Enter 1 to print random data in file and scan and save \n enter 3 for ra
 
 switch(n)
 {
-    case 1:
+    case 2:
 	    {
 do {
-  /*
-   * Do something to busy the CPU just here while you drink a coffee
-   * Be sure this code will not take more than `trigger` ms
-   */
 
   clock_t difference = clock() - before;
   msec = difference * 1000 / CLOCKS_PER_SEC;
 
-//  iterations++;
-
-	       	    wrongchar();
-saver();//infile newchar.h
+number++;
+  wrongchar();
+  saver();//infile newchar.h
 } while ( msec < trigger );
-//Practice('a');
-
- // ram();
+WPM=number/0.16;
+printf("YOUR WPM IS %f",WPM);
      break;
 	    }
-case 3:
+
+case 1:
        {
 
 random_char();
        break;
        
        }	
+
+case 3:
+{
+reportcard();
+
+break;
+}
+case 4:
+{
+efficincy();
+break;
+
+}
+
 }
 }
 
