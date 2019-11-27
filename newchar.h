@@ -14,6 +14,7 @@ int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0,
 
 int saver()
 {
+//	printf("ram1");
 struct data target[26];
  FILE * fp;
  FILE * fp1;
@@ -23,8 +24,8 @@ struct data target[26];
 
     fp = fopen("User_error.txt", "r");
     if (fp == NULL)
-        exit(EXIT_FAILURE);
-    
+       // exit(EXIT_FAILURE);
+  //printf("ram2\n") ; 
 target[0].character='a';
 target[1].character='b';
 
@@ -56,34 +57,34 @@ target[25].character='z';
 
     fp1 = fopen("scoreboard.txt", "r");
 
+for(no=0;no<26;no++)
+{
+target[no].present=0;
+//printf("%d tar",&d);
+}
+
+
 if(fp1!=NULL ){
-printf("%d",no);
+//printf("%d",no);
 
 for(no=0;no<26;no++)
 fscanf(fp1,"%c%d\n",&target[no].character,&target[no].present);
 }
 
-else
-for(no=0;no<26;no++)
-{
-target[no].present=0;
-printf("%d tar",&d);
-}
-
 
 fclose(fp1);
-  printf("%c",target[0].character); 
+ // printf("%c",target[0].character); 
 
 while ((read = getline(&test, &len, fp)) != -1) {
-        printf("Retrieved line of length %zu:\n", read);
-        printf("%s",test);
+   //     printf("Retrieved line of length %zu:\n", read);
+       // printf("%s",test);
 
 
 for(no=0;no<26;no++){
-if(*test==target[no].character)
+if(*test==target[no].character){
  target[no].present++;   
- //printf("ram ram");   
-}
+ //printf("%c",target[no].character);   
+}}
     }
  fclose(fp);
   //  if (test)

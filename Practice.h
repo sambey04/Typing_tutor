@@ -1,7 +1,8 @@
-const char * Practice(alphabet)
+#include<string.h>
+char * Practice(char alphabet)
 {   
     char user[80];
-   char words[20];
+  static char words[20];
     
 if(alphabet=='a')
   {  /* Open words file */
@@ -17,7 +18,7 @@ if(alphabet=='a')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
         
     }
@@ -35,7 +36,7 @@ else if(alphabet=='b')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 
@@ -53,7 +54,7 @@ else if(alphabet=='c')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='d')
@@ -70,7 +71,7 @@ else if(alphabet=='d')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='e')
@@ -87,7 +88,7 @@ else if(alphabet=='e')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='f')
@@ -104,7 +105,7 @@ else if(alphabet=='f')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='g')
@@ -121,7 +122,7 @@ else if(alphabet=='g')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='h')
@@ -138,7 +139,7 @@ else if(alphabet=='h')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='i')
@@ -155,7 +156,7 @@ else if(alphabet=='i')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='j')
@@ -172,7 +173,7 @@ else if(alphabet=='j')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='k')
@@ -189,7 +190,7 @@ else if(alphabet=='k')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='l')
@@ -206,7 +207,7 @@ else if(alphabet=='l')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='m')
@@ -223,7 +224,7 @@ else if(alphabet=='m')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='n')
@@ -240,7 +241,7 @@ else if(alphabet=='n')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='o')
@@ -257,7 +258,7 @@ else if(alphabet=='o')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='p')
@@ -274,7 +275,7 @@ else if(alphabet=='p')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='q')
@@ -291,7 +292,7 @@ else if(alphabet=='q')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='r')
@@ -308,7 +309,7 @@ else if(alphabet=='r')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='s')
@@ -325,7 +326,7 @@ else if(alphabet=='s')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='t')
@@ -342,7 +343,7 @@ else if(alphabet=='t')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='u')
@@ -359,7 +360,7 @@ else if(alphabet=='u')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='v')
@@ -376,7 +377,7 @@ else if(alphabet=='v')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='w')
@@ -393,7 +394,7 @@ else if(alphabet=='w')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='x')
@@ -410,7 +411,7 @@ else if(alphabet=='x')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='y')
@@ -427,7 +428,7 @@ else if(alphabet=='y')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
     }
 else if(alphabet=='z')
@@ -444,10 +445,11 @@ else if(alphabet=='z')
     rewind(fp);
     for(in = 0 ; in < ran ; in++)
         fgets(words , sizeof(words) , fp);
-        printf("%s" , words);
+         
         fclose(fp);
         
     }
-    const char * x=words;
-return x;
+//printf("%d",strlen(words));
+   //  char * x=(char *) malloc(strlen(words+1));
+return words;
 }
