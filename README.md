@@ -15,7 +15,8 @@ chmod 777 build.sh
 ./build.sh
 ./Typing_tutor
 ```
-
+# Video
+https://www.youtube.com/watch?v=prkOrSkfZ18
 
 
 
